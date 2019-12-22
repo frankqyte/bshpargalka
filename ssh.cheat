@@ -1,0 +1,4 @@
+# Since OpenSSH 7.3, you can use -J or -o ProxyJump to specify the bastion/jump host.
+# to SSH to node2 via node1:
+ssh -J you@node1 you@node2
+
