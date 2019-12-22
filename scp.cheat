@@ -1,2 +1,0 @@
-# SCP doesn't have the -J argument, but it does allow -o, so this works:
-scp -o ProxyJump=you@node1 file.txt you@node2:~
