@@ -1,0 +1,8 @@
+# Since OpenSSH 7.3, you can use -J or -o ProxyJump to specify the bastion/jump host.
+# to SSH to node2 via node1:
+
+ssh -J you@node1 you@node2
+
+# SCP doesn't have the -J argument, but it does allow -o, so this works:
+
+scp -o ProxyJump=you@node1 file.txt you@node2:~
